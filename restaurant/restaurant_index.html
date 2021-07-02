@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--레스토랑 리스트 모음-->
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="restaurant_index.css?v=<%=System.currentTimeMillis() %>">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <title>카페리스트</title>
+  </head>
+  <body>
+    <!--nav 시작-->
+    <!--사이트 로고 & 카테고리(카페, 음식점, 로그인, 로그아웃)-->
+    <div class="nav">
+      <div class="nav-title-left">
+        <div class="nav-title"><a href="../index.html"><img src="../logo.png" alt="로고사진"></a></div>
+      </div>
+      <div class="nav-item-right">
+        <div class="nav-item"><a href="../cafe/cafe_index.html" id="cafeA">CAFE</a></div>
+        <div class="nav-item"><a href="restaurant_index.html" id="restaurantA">RESTAURANT</a></div>
+        <div class="nav-item"><a href="../login/login.html">LOG IN</a></div>
+        <div class="nav-item"><button type="button" name="button" id="logoutBtn">LOG OUT</button></div>
+        <div class="nav-item-margin"></div>
+      </div>
+    </div>
+    <!--nav 끝-->
+
+    <!--전체 음식점 테두리-->
+    <div class="resBody">
+      <div class="res1" id="chon" name="최진엽등촌샤브샤브" onclick="detail(this)">
+        <table>
+          <tr>
+            <td rowspan="2"><img src="chon.jpg" alt="최진엽등촌샤브샤브"></td>
+            <td class="resName">최진엽등촌샤브샤브</td>
+          </tr>
+          <tr>
+            <td class="hashTag">#샤브샤브 #소고기  #돼지고기 #샐러드맛집</td>
+          </tr>
+        </table>
+      </div>
+      <div class="res2" id="pastabuono" name="파스타부오노" onclick="detail(this)">
+        <table>
+          <tr>
+            <td rowspan="2"><img src="pastabuono.jpg" alt="파스타부오노"></td>
+            <td class="resName">파스타부오노</td>
+          </tr>
+          <tr>
+            <td class="hashTag">#양식 #파스타 #피자 #리조또</td>
+          </tr>
+        </table>
+      </div>
+      <div class="res3" id="minehouse" name="마인네하우스" onclick="detail(this)">
+        <table>
+          <tr>
+            <td rowspan="2"><img src="minehouse.jpg" alt="마인네하우스"></td>
+            <td class="resName">마인네하우스</td>
+          </tr>
+          <tr>
+            <td class="hashTag">#닭갈비 #닭불고기</td>
+          </tr>
+        </table>
+      </div>
+      <div class="res4" id="chungchun" name="청춘우동까스" onclick="detail(this)">
+        <table>
+          <tr>
+            <td rowspan="2"><img src="chungchun.jpg" alt="청춘우동까스"></td>
+            <td class="resName">청춘우동까스</td>
+          </tr>
+          <tr>
+            <td class="hashTag">#돈까스 #우동</td>
+          </tr>
+        </table>
+      </div>
+      <div class="res5" id="pantom" name="팬텀팬피그" onclick="detail(this)">
+        <table>
+          <tr>
+            <td rowspan="2"><img src="pantom.jpg" alt="팬텀팬피그"></td>
+            <td class="resName">팬텀팬피그</td>
+          </tr>
+          <tr>
+            <td class="hashTag">#돼지고기 #무한리필</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+<script type="text/javascript" src="restaurant_index.js"></script>
+  </body>
+</html>

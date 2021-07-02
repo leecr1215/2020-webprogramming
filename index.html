@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--처음 메인 페이지-->
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>궁동, 어디가지?</title>
+  <link rel="stylesheet" type="text/css" href="index.css?v=<%=System.currentTimeMillis() %>">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!--font-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+</head>
+
+<body>
+  <!--nav 시작-->
+  <!--사이트 로고 & 카테고리(카페, 음식점, 로그인, 로그아웃)-->
+  <div class="nav">
+
+      <div class="nav-title"><a href="index.html" ><img src="logo.png"></a></div>
+
+    <div class="nav-item-right">
+      <div class="nav-item"><a href="./cafe/cafe_index.html">CAFE</a></div>
+      <div class="nav-item"><a href="./restaurant/restaurant_index.html">RESTAURANT</a></div>
+      <div class="nav-item"><a href="./login/login.html">LOG IN</a></div>
+      <div class="nav-item"><button type="button" name="button" id="logoutBtn">LOG OUT</button></div>
+      <div class="nav-item-margin"></div>
+    </div>
+  </div>
+  <!--nav 끝-->
+
+  <!--banner 시작-->
+  <!--배너 및 문구 -->
+  <div class="banner">
+    <div class="banner-title">
+      <p>궁동, 어디가지?</p>
+    </div>
+    <div class="banner-subtitle">
+      <p>궁동의 맛집, 카페를 소개합니다!</p>
+      <p id="userId" hidden></p>
+      <p id="checkLogin" hidden>0</p>
+    </div>
+  </div>
+  <!--banner 끝-->
+
+  <!--cafe 공간 시작-->
+  <!--리뷰 많이 달린 카페 1개-->
+  <div class="cafe">
+    <div class="cafe-title">
+      <p>카페 리뷰 TOP 1</p>
+    </div>
+    <div class="cafe-item">▶마을</div>
+
+  </div>
+  <!--cafe 공간 끝-->
+
+  <!--restaurant 공간 시작-->
+  <!--리뷰 많이 달린 음식점 1개-->
+  <div class="restaurant">
+    <div class="restaurant-title">
+      <p>음식점 리뷰 TOP 1</p>
+    </div>
+    <div class="restaurant-item">▶최진엽등촌샤브샤브</div>
+
+  </div>
+  <!--restaurant 공간 끝-->
+
+  <!--궁동 날씨 공간 시작-->
+  <div class="weather">
+    <div class="weather-title">
+      <p>현재 궁동의 날씨는?</p>
+    </div>
+    <div class="weather-content">
+      <table id="table1">
+        <tr>
+          <td id="CurrIcon"></td>
+          <td id="CurrTemp"></td>
+        </tr>
+        <table id="table2">
+          <tr>
+            <td><img src="wind.png" alt="바람 사진" id="windImg"><p id="wind"></p></td>
+            <td><img src="humidity.png" alt="습도 사진" id="humImg"><p id="humidity"></p></td>
+            <td><img src="cloud.png" alt="구름 사진" id="cloudImg"><p id="cloud"></p></td>
+          </tr>
+        </table>
+      </table>
+    </div>
+  </div>
+  <!--날씨 공간 끝-->
+  <br><br><br><br><br><br><br>
+  <!--footer-->
+  <!--개발자 정보 기입-->
+  <div class="footer">
+    <div class="footer-developer">
+      <p>[DEVELOPER INFORMATION]</p><br>
+      <img src="developer.PNG" alt="개발자 얼굴">
+      <p>Chungnam National University, Korea</p>
+    </div>
+    <div class="footer-icon-made">
+      <p>※ Logo Image is made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="index.js?v=<%=System.currentTimeMillis() %>"></script>
+</body>
+
+</html>

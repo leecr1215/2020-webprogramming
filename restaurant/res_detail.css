@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'yg-jalnan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*상단 바 관련 css
+수평으로 만들었습니다.*/
+/*상단 바를 위에 고정시키는 코드는
+https://www.daleseo.com/css-position-fixed-navigation 사이트를 참고했습니다.*/
+.nav {
+  width: auto;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 2px solid lightGray;
+}
+
+/*상단 바 오른쪽 item 4개에 대한 css*/
+.nav-item {
+  right: 0;
+  margin-right: 30px;
+}
+
+/*a 태그의 밑줄 없애고 색깔 검정색으로 만듦*/
+.nav-item-right a {
+  text-decoration: none;
+  color: black;
+}
+
+/*상단 바 왼쪽 로고에 관한 css*/
+/*수평으로 만들고 왼쪽에 위치하게 함*/
+.nav-title {
+  width: 200;
+  height: 20;
+  margin-right: 620px;
+  display: flex;
+  margin-left: 50px;
+}
+
+/*오른쪽 상단 바 아이템들을 오른쪽으로 위치하게 하는 코드*/
+.nav-item-right {
+  display: flex;
+  margin-left: auto;
+}
+
+/*오른쪽 상단 바 아이템들을 전체적으로 왼쪽으로 옮기기 위한 margin 설정*/
+.nav-item-margin {
+  margin-right: 160px;
+}
+/*RES 하늘색으로 고정*/
+#resA {
+  color: #add8e6;
+}
+
+/*a에 마우스 올리면 하늘색*/
+a:hover, #login:hover, #logoutBtn:hover, #cafeA:hover {
+  color: #add8e6;
+}
+
+/*로그아웃 버튼*/
+#logoutBtn {
+  background-color: white;
+  border: 1px solid white;
+  font-weight: 'NanumSquare';
+  font-size: 15px;
+}
+
+/*안에 둘러싸는 흰색 살짝 동그란 div*/
+.roundBody {
+  overflow: auto;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin-bottom: 50px;
+  width: auto;
+  height: 500px;
+  margin-left: 60px;
+  margin-top: 40px;
+  margin-right: 60px;
+  background-color: white;
+}
+
+/*카페 이미지 */
+#resImg {
+  width: 330px;
+  height: 200px;
+  margin-right: 180px;
+}
+
+.thumbnail {
+  margin-left: 200px;
+  margin-top: 100px;
+}
+
+/*카페 이름 크기*/
+#resName {
+  font-size: 50px;
+  font-family: 'yg-jalnan';
+}
+
+#resScore {
+  font-size: 25px;
+  font-family: 'nanumsquare';
+  font-weight: bold;
+}
+
+.resBody {
+  height: 80vh;
+  width: auto;
+  border: 1px solid #b0c4de;
+  margin-top: 115px;
+  margin-left: 80px;
+  margin-right: 80px;
+  align-items: center;
+  background-color: #b0c4de;
+}
+
+hr {
+  width: 93%;
+  border: 1px solid grey;
+  margin-left: 42px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: grey;
+}
+
+
+#locationTitle, #reviewTitle {
+  font-family: 'nanumsquare';
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+#locationContent {
+  font-family: 'nanumsquare';
+  text-align: center;
+  font-size: 25px;
+}
+
+.reviewBox1 {
+  margin-left:50px;
+  width: 92%;
+  border: 1px solid black;
+}
+
+span {
+  margin-left: 50px;
+  margin-right: 30px;
+}
+
+#text {
+  margin-left: 25px;
+  width: 90%;
+  height: 50px;
+
+}
+
+#reviewBtn {
+  background-color: #b0c4de;
+  border: 1px solid black;
+  height: 50px;
+  width: 70px;
+}
+
+.container {
+  margin-left:50px;
+  border: 1px solid black;
+}
