@@ -1,4 +1,4 @@
-// 날씨 api 키: 7d3242545f4b363f4157bc85f98ccbc6
+// 날씨 api 키: 
 // 날씨 기호: °
 // 궁동 위도: 36.362730534768
 // 궁동 경도: 127.35184476683
@@ -8,7 +8,7 @@
 //https://namjackson.tistory.com/27를 참고했습니다.
 $(document).ready(function(){
   $.ajax({
-    url: "http://api.openweathermap.org/data/2.5/weather?lat=36.362730534768&lon=127.35184476683&appid=7d3242545f4b363f4157bc85f98ccbc6&units=metric",
+    url: "http://api.openweathermap.org/data/2.5/weather?lat=36.362730534768&lon=127.35184476683&appid=api키&units=metric",
     dataType: "json",
     type: "GET",
     success: function(data){
